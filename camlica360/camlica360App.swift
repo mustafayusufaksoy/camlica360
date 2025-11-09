@@ -11,7 +11,7 @@ import SwiftUI
 struct camlica360App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppRootView()
         }
     }
 }

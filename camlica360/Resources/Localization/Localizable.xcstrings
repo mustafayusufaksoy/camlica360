@@ -1,0 +1,1384 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "..." : {
+
+    },
+    "*" : {
+
+    },
+    "%@" : {
+
+    },
+    "%@ - %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ - %2$@"
+          }
+        }
+      }
+    },
+    "%lld" : {
+
+    },
+    "%lld gün" : {
+
+    },
+    "%lld talep" : {
+
+    },
+    "%lld%%" : {
+
+    },
+    "Açıklama" : {
+
+    },
+    "Açıklama:" : {
+
+    },
+    "auth_forgot_password_button" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Send Password Reset Code"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifre Sıfırlama Kodu Gönder"
+          }
+        }
+      }
+    },
+    "auth_forgot_password_footer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A password reset code will be sent based on the information provided."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifre sıfırlama kodu belirtilen bilgilere göre gönderilecektir."
+          }
+        }
+      }
+    },
+    "auth_forgot_password_subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter your information completely and correctly to reset your password."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrenizi sıfırlamak için aşağıdaki bilgileri eksiksiz ve doğru bir şekilde doldurunuz."
+          }
+        }
+      }
+    },
+    "auth_forgot_password_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forgot your password?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrenizi mi unuttunuz?"
+          }
+        }
+      }
+    },
+    "auth_login_button" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giriş Yap"
+          }
+        }
+      }
+    },
+    "auth_login_company_code" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Company Code"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şirket Kodu"
+          }
+        }
+      }
+    },
+    "auth_login_company_code_placeholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your company code"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şirket kodunuzu girin"
+          }
+        }
+      }
+    },
+    "auth_login_error_company_code" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid or incomplete company code."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eksik ya da hatalı bir şirket kod girdiniz."
+          }
+        }
+      }
+    },
+    "auth_login_error_id_number" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter a valid ID number. \"ID Number\" must be 11 digits."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lütfen geçerli bir TC kimlik numarası giriniz. \"TC Kimlik Numarası\" 11 haneli olmalıdır."
+          }
+        }
+      }
+    },
+    "auth_login_error_password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid or incomplete password."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eksik ya da hatalı bir şifre girdiniz."
+          }
+        }
+      }
+    },
+    "auth_login_forgot_password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forgot your password?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrenizi mi unuttunuz?"
+          }
+        }
+      }
+    },
+    "auth_login_id_number" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ID Number"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TC Kimlik Numarası"
+          }
+        }
+      }
+    },
+    "auth_login_id_number_placeholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your ID number"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TC Kimlik numaranızı girin"
+          }
+        }
+      }
+    },
+    "auth_login_password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifre"
+          }
+        }
+      }
+    },
+    "auth_login_password_placeholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your password"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrenizi girin"
+          }
+        }
+      }
+    },
+    "auth_login_privacy_notice" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy Notice"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Üyelik KVKK Aydınlatma Metni"
+          }
+        }
+      }
+    },
+    "auth_login_privacy_policy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "KVKK Information"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "KVKK Bilgilendirmesi"
+          }
+        }
+      }
+    },
+    "auth_login_remember_me" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remember me"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beni Hatırla"
+          }
+        }
+      }
+    },
+    "auth_login_subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter your information correctly and completely to log into your company account."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şirket hesabınıza giriş yapmak için bilgilerinizi eksiksiz ve doğru bir şekilde doldurunuz."
+          }
+        }
+      }
+    },
+    "auth_login_terms_accepted" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "By clicking Login, I confirm that I accept the Terms and Conditions and Privacy Policy"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giriş Yap'a basarak, Üyelik Sözleşmesi'ni ve KVKK Bilgilendirmesi'ni ve Üyelik KVKK Aydınlatma Metni'ni kabul ettiğimi onaylıyorum."
+          }
+        }
+      }
+    },
+    "auth_login_terms_and_conditions" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terms and Conditions"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Üyelik Sözleşmesi"
+          }
+        }
+      }
+    },
+    "auth_login_terms_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "By clicking Login, I confirm that I accept the Terms and Conditions and Privacy Policy"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giriş Yap'a basarak, Üyelik Sözleşmesi'ni ve KVKK Bilgilendirmesi'ni ve Üyelik KVKK Aydınlatma Metni'ni kabul ettiğimi onaylıyorum."
+          }
+        }
+      }
+    },
+    "auth_login_welcome" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome! 👋🏻"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoşgeldiniz! 👋🏻"
+          }
+        }
+      }
+    },
+    "auth_otp_no_sms" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Didn't receive SMS?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SMS gelmediyse"
+          }
+        }
+      }
+    },
+    "auth_otp_resend_code" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resend Code"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kodu Tekrar Gönder"
+          }
+        }
+      }
+    },
+    "auth_otp_send_email" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Send via Email"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-posta gönder"
+          }
+        }
+      }
+    },
+    "auth_otp_verification_button" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verify"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Doğrula"
+          }
+        }
+      }
+    },
+    "auth_otp_verification_subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter the 6-digit verification code sent to your phone."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Telefonunuza gelen 6 haneli doğrulama kodunu giriniz."
+          }
+        }
+      }
+    },
+    "auth_otp_verification_timer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Code expires: %@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kod süresi: %@"
+          }
+        }
+      }
+    },
+    "auth_otp_verification_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verification Code"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Doğrulama Kodu"
+          }
+        }
+      }
+    },
+    "auth_reset_password_button" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Update Password"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifreyi Güncelle"
+          }
+        }
+      }
+    },
+    "auth_reset_password_confirm_password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm New Password"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni Şifre Doğrulama"
+          }
+        }
+      }
+    },
+    "auth_reset_password_confirm_password_placeholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm your password"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrenizi doğrulayın"
+          }
+        }
+      }
+    },
+    "auth_reset_password_error_min_length" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must be at least 6 characters long"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifre en az 6 karakter olmalıdır"
+          }
+        }
+      }
+    },
+    "auth_reset_password_error_mismatch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passwords do not match"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifreler eşleşmiyor"
+          }
+        }
+      }
+    },
+    "auth_reset_password_footer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must be at least 6 characters and contain special characters."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifre en az 6 karakter olmalıdır ve özel karakterler içermelidir."
+          }
+        }
+      }
+    },
+    "auth_reset_password_new_password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Password"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni Şifre"
+          }
+        }
+      }
+    },
+    "auth_reset_password_new_password_placeholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your new password"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni şifrenizi girin"
+          }
+        }
+      }
+    },
+    "auth_reset_password_subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Set a new password and keep your account secure"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni şifrenizi belirleyin ve hesabınızı güvenli tutun"
+          }
+        }
+      }
+    },
+    "auth_reset_password_success" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your password has been successfully updated"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifreniz başarıyla güncellendi"
+          }
+        }
+      }
+    },
+    "auth_reset_password_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Set New Password"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni Şifre Belirle"
+          }
+        }
+      }
+    },
+    "Ay" : {
+
+    },
+    "Başarılı" : {
+
+    },
+    "Başlatılıyor..." : {
+
+    },
+    "Bekleyen İstekler" : {
+
+    },
+    "Birincil Adres" : {
+
+    },
+    "Bu sayfa henüz hazır değil" : {
+
+    },
+    "Chart Placeholder" : {
+
+    },
+    "Çıkış Yap" : {
+
+    },
+    "common_back" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geri"
+          }
+        }
+      }
+    },
+    "common_cancel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İptal"
+          }
+        }
+      }
+    },
+    "common_close" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapat"
+          }
+        }
+      }
+    },
+    "common_delete" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sil"
+          }
+        }
+      }
+    },
+    "common_edit" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Düzenle"
+          }
+        }
+      }
+    },
+    "common_error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hata"
+          }
+        }
+      }
+    },
+    "common_loading" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loading..."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yükleniyor..."
+          }
+        }
+      }
+    },
+    "common_next" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İleri"
+          }
+        }
+      }
+    },
+    "common_no_data" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No data available"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veri bulunamadı"
+          }
+        }
+      }
+    },
+    "common_ok" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamam"
+          }
+        }
+      }
+    },
+    "common_required" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Required"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gerekli"
+          }
+        }
+      }
+    },
+    "common_save" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaydet"
+          }
+        }
+      }
+    },
+    "common_success" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Success"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başarılı"
+          }
+        }
+      }
+    },
+    "common_try_again" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try Again"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tekrar Deneyin"
+          }
+        }
+      }
+    },
+    "Değer" : {
+
+    },
+    "Desteklenen dosya tipleri: PNG, JPEG, JPG, GIF, PNG, PDF, HEIC" : {
+
+    },
+    "Dikkat!" : {
+
+    },
+    "Dosya/Medya" : {
+
+    },
+    "Dosya/medya sürükle ya da yükle" : {
+
+    },
+    "email_placeholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your email"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-posta adresinizi girin"
+          }
+        }
+      }
+    },
+    "error_invalid_email" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid email address"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geçersiz e-posta adresi"
+          }
+        }
+      }
+    },
+    "Filtrele" : {
+
+    },
+    "Geçmiş Kayıt Yok" : {
+
+    },
+    "Geçmiş yükleniyor..." : {
+
+    },
+    "Girdiğiniz tarihe göre toplam gün" : {
+
+    },
+    "Giriş başarılı!" : {
+
+    },
+    "Gözat" : {
+
+    },
+    "Grafik 1" : {
+
+    },
+    "Grafik 2" : {
+
+    },
+    "gün" : {
+
+    },
+    "Hata" : {
+
+    },
+    "Hello, world!" : {
+
+    },
+    "Henüz onaylanmış veya reddedilmiş bir talep bulunmamaktadır" : {
+
+    },
+    "home_completed_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completed"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamamlananlar"
+          }
+        }
+      }
+    },
+    "home_pending_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pending"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bekleyenler"
+          }
+        }
+      }
+    },
+    "home_tab_home" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anasayfa"
+          }
+        }
+      }
+    },
+    "home_tab_messages" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Messages"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesajlar"
+          }
+        }
+      }
+    },
+    "home_tab_notifications" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bildirimler"
+          }
+        }
+      }
+    },
+    "home_tab_profile" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil"
+          }
+        }
+      }
+    },
+    "home_tab_reports" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reports"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raporlar"
+          }
+        }
+      }
+    },
+    "İptal" : {
+
+    },
+    "İzin Detayı" : {
+
+    },
+    "İzin Onay Durumu" : {
+
+    },
+    "İzin talebi başarıyla onaylandı" : {
+
+    },
+    "İzin talebi reddedildi" : {
+
+    },
+    "İzin talebiniz başarıyla oluşturuldu." : {
+
+    },
+    "İzin Talep Oluştur" : {
+
+    },
+    "İzin Türü:" : {
+
+    },
+    "İzinler" : {
+
+    },
+    "İzinlerim" : {
+
+    },
+    "İzni Onayla" : {
+
+    },
+    "İzni Reddet" : {
+
+    },
+    "Kalan" : {
+
+    },
+    "Kod süresi:" : {
+
+    },
+    "Kullanıcı İzinler" : {
+
+    },
+    "Kullanılan" : {
+
+    },
+    "login_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giriş Yap"
+          }
+        }
+      }
+    },
+    "Onay Bekleyen Talep Yok" : {
+
+    },
+    "Onay Kuyruğu" : {
+
+    },
+    "Onay Notu (Opsiyonel)" : {
+
+    },
+    "Onayla" : {
+
+    },
+    "Onaylanan İzin Görüntüleme" : {
+
+    },
+    "password_placeholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your password"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrenizi girin"
+          }
+        }
+      }
+    },
+    "Profil bilgileri yükleniyor..." : {
+
+    },
+    "Red Nedeni (Zorunlu)" : {
+
+    },
+    "Reddet" : {
+
+    },
+    "Saat Seçin" : {
+
+    },
+    "Sayfa: %lld kaydın %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Sayfa: %1$lld kaydın %2$lld"
+          }
+        }
+      }
+    },
+    "Sicil No: %@" : {
+
+    },
+    "Sonradan Eklenecek" : {
+
+    },
+    "Şu anda onayınızı bekleyen izin talebi bulunmamaktadır" : {
+
+    },
+    "Tab" : {
+
+    },
+    "Talep Bilgileri" : {
+
+    },
+    "Tamam" : {
+
+    },
+    "Tarih Seçin" : {
+
+    },
+    "Tekrar Dene" : {
+
+    },
+    "Toplam" : {
+
+    },
+    "Toplam:" : {
+
+    },
+    "Tüm Talepler" : {
+
+    },
+    "welcome_message" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoş Geldiniz"
+          }
+        }
+      }
+    },
+    "Yapıştır" : {
+
+    },
+    "Yükleniyor..." : {
+
+    }
+  },
+  "version" : "1.0"
+}

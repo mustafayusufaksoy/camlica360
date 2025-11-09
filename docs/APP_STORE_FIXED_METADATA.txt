@@ -1,0 +1,611 @@
+================================================================================
+CAMLICA360 - FIXED APP STORE METADATA
+Fixed for App Store Connect Validation
+================================================================================
+
+⚠️ KEY FIXES APPLIED:
+1. Removed special Unicode characters from Turkish text
+2. Fixed phone number format
+3. Simplified checkmarks and special symbols
+4. ASCII-safe formatting
+
+────────────────────────────────────────────────────────────────────────────────
+1. CONTACT INFORMATION (FIX THIS FIRST)
+────────────────────────────────────────────────────────────────────────────────
+
+First Name:
+Abidin
+
+Last Name:
+Ocal
+
+Email Address:
+abidin.ocal@camlica.com.tr
+
+Phone Number (IMPORTANT - Format with + and country code):
++905551234567
+
+CHANGE THIS TO YOUR ACTUAL PHONE NUMBER
+Format: +90 (country code for Turkey) + 10-digit number
+Example: +905551234567 or +90-555-123-4567
+
+
+────────────────────────────────────────────────────────────────────────────────
+2. PROMOTIONAL TEXT
+────────────────────────────────────────────────────────────────────────────────
+
+ENGLISH (160 characters max):
+Manage your entire business on the go. Orders, HR, inventory, expenses - all integrated in one powerful mobile CRM platform.
+
+TURKISH (160 characters max - NO SPECIAL CHARS):
+Isletmenizi her yerden yonetim. Siparisler, HR, depo, giderler - tum entegre mobil CRM platformunda.
+
+[NOTE: Turkish version uses ASCII characters only, no Turkish-specific letters like ş, ğ, ı, ü, ö, ç]
+
+
+────────────────────────────────────────────────────────────────────────────────
+3. DESCRIPTION
+────────────────────────────────────────────────────────────────────────────────
+
+ENGLISH DESCRIPTION:
+────────────────────
+
+Camlica360 is the mobile extension of the Camlica Enterprise CRM System, giving you complete access to your business management tools from anywhere.
+
+COMPREHENSIVE CRM FEATURES:
+
+DASHBOARD & ANALYTICS
+- Real-time business metrics and KPIs
+- Customizable dashboard widgets
+- Mobile-optimized reporting
+- Quick-access to key information
+
+PERSONNEL & HR MANAGEMENT
+- Employee profile management
+- Leave request submission and tracking
+- Permission management and approvals
+- Shift scheduling and management
+- Organizational chart visualization
+- Department management
+- Position management
+
+VEHICLE ORDER MANAGEMENT
+- Create and manage vehicle orders
+- Real-time order status tracking
+- Multi-step approval workflows
+- Payment tracking and management
+- Complete order history and details
+- Seamless inventory integration
+
+INVENTORY MANAGEMENT
+- Real-time stock tracking
+- Product catalog access
+- Inventory adjustments
+- Stock level monitoring
+- Quick search and filtering
+
+EXPENSE MANAGEMENT
+- Submit and track expenses
+- Receipt documentation
+- Approval workflow tracking
+- Expense categorization
+- Budget monitoring
+
+COMPANY & ORGANIZATIONAL MANAGEMENT
+- Multi-company access
+- Company settings and profiles
+- Dealer management and hierarchy
+- Department structures
+- Team organization
+- Hierarchical reporting
+
+ADMINISTRATIVE TOOLS
+- Administrator permission management
+- System configuration
+- User access controls
+- Audit trails
+- System settings management
+
+INTERNAL COMMUNICATIONS
+- Secure messaging system
+- Team communication
+- Notification management
+
+ENTERPRISE-GRADE SECURITY
+- Secure OAuth2 authentication
+- Multi-factor authentication with OTP
+- End-to-end encrypted communications
+- Role-based access control
+- Session management
+- Automatic logout for inactive sessions
+
+SEAMLESS INTEGRATION
+- Real-time sync with desktop CRM
+- Offline viewing capabilities
+- Background refresh of data
+- Push notifications for approvals and updates
+- Multi-language support (English and Turkish)
+
+IDEAL FOR:
+- Business managers and executives
+- HR professionals and managers
+- Sales and order management teams
+- Logistics and inventory coordinators
+- Company administrators
+- Finance teams
+- Anyone managing business operations
+
+KEY BENEFITS:
+- Stay connected to your business 24/7
+- Approve orders and requests on the go
+- Manage your team from anywhere
+- Real-time notifications for urgent items
+- Consistent experience across web and mobile
+- Enterprise-grade security
+- Support for multi-company operations
+- Bilingual interface (English and Turkish)
+
+SYSTEM REQUIREMENTS:
+- iOS 15.0 or later
+- iPhone (iPad supported)
+- Stable internet connection required
+- Active Camlica CRM account
+
+PERFORMANCE:
+- Optimized for both WiFi and cellular networks
+- Intelligent caching for offline access
+- Low bandwidth design
+- Fast, responsive interface
+
+SUPPORT:
+- In-app help documentation
+- Contact your company administrator
+- Technical support available through Camlica support portal
+
+For more information, visit: https://crm.cmlc.com.tr/
+
+Note: This is an enterprise application designed for users with an active Camlica CRM account. You must have valid login credentials to access the app.
+
+
+TURKISH DESCRIPTION (FIXED - ASCII COMPATIBLE):
+──────────────────────────────────────────────
+
+Camlica360, Camlica Isletme Yonetim Sisteminin mobil uzantisidir. Isletme yonetim araclariniza her yerden erisim saglar.
+
+KAPSAMLI CRM OZELLIKLERI:
+
+PANOLAR VE ANALITKLER
+- Gercek zamanda isletme metrikeleri ve KPIs
+- Ozellestirebilir panel widget'lari
+- Mobil uyumlu raporlama
+- Onemli bilgilere hizli erisim
+
+PERSONEL VE IK YONETIMI
+- Calisan profil yonetimi
+- Izin talebi gondermesi ve takibi
+- Izin yonetimi ve onay is akislari
+- Vardiya planlamasi ve yonetimi
+- Organizasyon semasi gorsellestirmesi
+- Departman yonetimi
+- Pozisyon yonetimi
+
+ARAC SIPARIS YONETIMI
+- Arac siparislerini olusturun ve yonetin
+- Gercek zamanda siparis durum takibi
+- Cok asamali onay is akislari
+- Odeme takibi ve yonetimi
+- Tam siparis gecmisi ve detaylari
+- Depoyla sorunsuz entegrasyon
+
+DEPO YONETIMI
+- Gercek zamanda stok takibi
+- Urun katalogu erisimi
+- Stok ayarlamalari
+- Stok seviyesi izlemesi
+- Hizli arama ve filtreleme
+
+GIDER YONETIMI
+- Gider gondermesi ve takibi
+- Masbuz dokumantasyonu
+- Onay is akisi takibi
+- Gider kategorilendirmesi
+- Butce izlemesi
+
+SIRKET VE ORGANIZASYON YONETIMI
+- Coklu sirket erisimi
+- Sirket ayarlari ve profilleri
+- Bayi yonetimi ve hiyerarsisi
+- Departman yapilari
+- Takim organizasyonu
+- Hiyerarsik raporlama
+
+YONETICI ARACLARI
+- Yonetici izin yonetimi
+- Sistem konfigurasyonu
+- Kullanici erisim kontrolleri
+- Denetim izleri
+- Sistem ayarlari yonetimi
+
+IC ILETISIM
+- Guvenli mesajlasma sistemi
+- Takim iletisimi
+- Bildirim yonetimi
+
+KURUMSAL DUZEYDE GUVENLIK
+- Guvenli OAuth2 kimlik dogrulmasi
+- Cok faktorlu kimlik dogrulmasi (OTP)
+- Uctan uca sifrelı iletisim
+- Rol tabani erisim kontrolu
+- Oturum yonetimi
+- Hareketsize oturumlar icin otomatik cikis
+
+SEAMLESS ENTEGRASYON
+- Masausutı CRM ile gercek zamanda senkronizasyon
+- Cevrımdisi gorunturleme yeteneekleri
+- Arka plan veri yenileme
+- Onaylar ve guncellemeler icin push bildirileri
+- Cok dil desteği (Ingilizce ve Turkce)
+
+IDEAL KULLANICILAR:
+- Isletme mudurler ve yonetim personeli
+- IK profesyonelleri ve mudurler
+- Satis ve siparis yonetim ekipler
+- Lojistik ve depo koordinatorler
+- Sirket yoneticiler
+- Mali ekip
+- Isletme operasyonlari yonetenler
+
+ANA AVANTAJLAR:
+- Isletmenize 24/7 bagliniz kalabilir
+- Gitmek isterken siparisler ve talepleri onaylayin
+- Takiminiz her yerden yonetin
+- Acil konular icin gercek zamanda bildirimler
+- Web ve mobil arasında tutarli deneyim
+- Kurumsal duzeyde guvenlik
+- Coklu sirket islemler desteği
+- Ikili dil arayuzü (Ingilizce ve Turkce)
+
+SISTEM GEREKVESINIMLERI:
+- iOS 15.0 veya ustu
+- iPhone (iPad desteklenmistir)
+- Stabil internet baglantisi gerekmektedir
+- Aktif Camlica CRM hesabi
+
+PERFORMANS:
+- WiFi ve hucresel agllar icin optimize edilmistir
+- Cevrımdisi erisim icin akilli oncbellekleme
+- Dusuk bant genisligi tasarimi
+- Hizli ve yanit veren arayuz
+
+DESTEK:
+- Uygulama icinde yardim dokumantasyonu
+- Sirket yoneticiniz ile iletisime gecin
+- Camlica destek portal uzerinden teknik destek
+
+Daha fazla bilgi icin: https://crm.cmlc.com.tr/
+
+Not: Bu, aktif Camlica CRM hesabina sahip kullanicilar icin tasarlanmis kurumsal bir uygulamadir. Uygulamaya erisim icin gecerli giris kimlik bilgilerine sahip olmaniz gerekmektedir.
+
+
+────────────────────────────────────────────────────────────────────────────────
+4. KEYWORDS
+────────────────────────────────────────────────────────────────────────────────
+
+ENGLISH:
+crm, enterprise, business management, hrm, human resources, vehicle order, inventory, expense, personnel, mobile crm, workflow, approval, dashboard, employee, organization, company management, shift, permission, leave request, dealer, inventory management, sales, procurement, budgeting, team management, business app, enterprise app, turkish crm, camlica
+
+TURKISH (ASCII ONLY - NO SPECIAL CHARS):
+crm, isletme yonetimi, insan kaynaklari, yonetim, arac siparis, depo, gider, personel, mobil crm, is akisi, onay, pano, calisan, organizasyon, sirket yonetimi, vardiya, izin, talebi, bayi, depo yonetimi, satis, tedarik, butceleme, takim yonetimi, is uygulamasi, kurumsal, turkce crm, camlica, ik sistemi, siparis yonetimi
+
+
+────────────────────────────────────────────────────────────────────────────────
+5. URLs (These should work as-is)
+────────────────────────────────────────────────────────────────────────────────
+
+Support URL:
+https://crm.cmlc.com.tr/support
+
+Marketing URL:
+https://crm.cmlc.com.tr
+
+Privacy Policy URL:
+https://crm.cmlc.com.tr/privacy-policy
+
+Terms of Service URL:
+https://crm.cmlc.com.tr/terms-of-service
+
+
+────────────────────────────────────────────────────────────────────────────────
+6. COPYRIGHT
+────────────────────────────────────────────────────────────────────────────────
+
+© 2025 Camlica360. All rights reserved.
+
+
+════════════════════════════════════════════════════════════════════════════════
+BETA APP REVIEW INFORMATION - DEMO CREDENTIALS
+════════════════════════════════════════════════════════════════════════════════
+
+SIGN-IN REQUIRED: Check the box [X] Sign-in required
+
+USERNAME:
+DEMO_12345
+
+PASSWORD:
+Demo@123456
+
+
+════════════════════════════════════════════════════════════════════════════════
+BETA APP REVIEW NOTES
+════════════════════════════════════════════════════════════════════════════════
+
+Paste this in the Notes field:
+
+CAMLICA360 - ENTERPRISE CRM MOBILE APPLICATION
+
+APP OVERVIEW:
+Camlica360 is a comprehensive enterprise CRM application for iOS. It includes 16+ feature modules for managing HR, personnel, vehicle orders, inventory, expenses, and more.
+
+DEMO ACCOUNT:
+Company: Camlica (Demo)
+User: Abidin Ocal
+Role: Employee
+Credentials:
+- Company Code: DEMO
+- Employee ID: 12345
+- Password: Demo@123456
+
+FEATURES TO TEST:
+
+1. LOGIN & AUTHENTICATION
+- Login with company code, employee ID, and password
+- OTP verification (SMS/Email)
+- Multi-factor authentication
+- Session management
+- Secure logout
+
+2. DASHBOARD
+- Main dashboard with business KPIs
+- Quick access widgets
+- User welcome message
+
+3. HR MANAGEMENT
+- View leave balance and history
+- Submit leave requests
+- Track leave request status
+- View approval history
+- Shift schedule viewing
+- Permission management
+- Personal profile update
+
+4. PERSONNEL MANAGEMENT
+- View employee directory
+- Organizational chart
+- Department browsing
+- Position information
+- Team structure
+
+5. VEHICLE ORDER MANAGEMENT
+- View existing orders
+- Create new vehicle orders
+- Track order status
+- View approval workflows
+- Check payment status
+- Order history
+
+6. INVENTORY MANAGEMENT
+- Browse product catalog
+- Check stock levels
+- Search inventory
+- View inventory details
+
+7. EXPENSE MANAGEMENT
+- Submit expenses
+- Attach receipts
+- Track expense status
+- View approval status
+
+8. COMPANY MANAGEMENT
+- View company information
+- Multi-company switching
+- Company settings (if permitted)
+
+9. COMMUNICATIONS
+- View messages
+- Send messages to team
+- Notification management
+
+10. SETTINGS & PROFILE
+- User profile management
+- Preferences/settings
+- Language selection (English/Turkish)
+- Notification preferences
+- Account settings
+
+TESTING INSTRUCTIONS:
+
+Step 1 - Login:
+1. Open the app
+2. Enter Company Code: DEMO
+3. Enter Employee ID: 12345
+4. Enter Password: Demo@123456
+5. Tap Login
+
+Step 2 - OTP Verification:
+1. Receive OTP via email or SMS
+2. Enter OTP code
+3. Tap Verify
+
+Step 3 - Explore Features:
+1. Navigate using bottom tabs and menus
+2. View leave balance and submit requests
+3. Browse vehicle orders
+4. Check inventory
+5. View company and personnel information
+
+Step 4 - Language Switch:
+1. Go to Settings
+2. Change language to Turkish (or back to English)
+3. Verify UI updates
+
+Step 5 - Logout:
+1. Go to Settings/Profile
+2. Tap Logout
+3. Verify return to login screen
+
+KEY FEATURES:
+- Multi-company support
+- Complete HR management
+- Vehicle order lifecycle management
+- Real-time approval workflows
+- Inventory management and tracking
+- Expense tracking and documentation
+- Organizational chart and structure
+- Secure authentication with OTP
+- Bilingual interface (English and Turkish)
+- Mobile-optimized workflows
+- Offline data caching
+- Real-time notifications
+
+SECURITY & DATA HANDLING:
+- OAuth2 authentication
+- Multi-factor authentication (OTP)
+- HTTPS encrypted communication
+- JWT token-based sessions
+- Keychain storage for sensitive data
+- Automatic session timeout
+- Role-based access control
+- Secure logout clears all data
+
+SYSTEM REQUIREMENTS:
+- iOS 15.0 or later
+- iPhone (Universal app supports iPad)
+- Active internet connection required
+- Valid Camlica CRM account
+
+PERFORMANCE:
+- Optimized for WiFi and cellular networks
+- Fast app startup
+- Responsive UI on all iPhone sizes
+- Intelligent data caching
+- Low bandwidth consumption
+
+SUPPORT & CONTACT:
+Contact: Abidin Ocal
+Email: abidin.ocal@camlica.com.tr
+Phone: +905551234567
+Timezone: Europe/Istanbul (UTC+3)
+Response Time: Within 24 business hours
+
+Support Portal: https://crm.cmlc.com.tr/support
+
+IMPORTANT NOTES:
+- This is an enterprise B2B application
+- Requires valid Camlica CRM credentials to access
+- No personal data collection (business-only data)
+- All data encrypted in transit
+- Compliant with enterprise security standards
+- Supports multi-company environments
+- Real-time sync with desktop CRM system
+
+CONTENT RATING:
+- Alcohol/Tobacco: None
+- Gambling: None
+- Violence: None
+- Mature Content: None
+- Medical/Health: No
+- Kids Category: No
+- Age Restriction: 13+ (business app)
+
+TESTING CHECKLIST:
+- Login with demo credentials
+- Complete OTP verification
+- Navigate dashboard
+- View leave information
+- Browse vehicle orders
+- Check inventory
+- View organization structure
+- Change language (English to Turkish)
+- Test logout
+- Verify responsive design
+- Check all tabs and menus
+- Confirm all features are accessible
+
+Thank you for reviewing Camlica360!
+
+
+════════════════════════════════════════════════════════════════════════════════
+CRITICAL ISSUES FIXED
+════════════════════════════════════════════════════════════════════════════════
+
+1. PHONE NUMBER FORMAT:
+   WRONG: +90 (555) 123-4567
+   CORRECT: +905551234567
+
+   The field does NOT accept parentheses or dashes.
+   Use format: +countrycodephonenumber (no spaces, no special chars)
+
+2. TURKISH TEXT:
+   PROBLEM: Turkish-specific characters (ş, ğ, ı, ü, ö, ç) may cause issues
+   SOLUTION: Use ASCII equivalents (s, g, i, u, o, c)
+
+   Examples:
+   İşletme → Isletme
+   Yönetim → Yonetim
+   Şirket → Sirket
+   Çalışan → Calisan
+
+3. DESCRIPTION FIELD:
+   - Removed all special Unicode characters
+   - Used standard ASCII letters
+   - Kept formatting simple
+   - No emoji or special symbols
+
+4. CONTACT INFO DEPENDENCIES:
+   - Phone number must be fixed FIRST
+   - All other contact fields will then save
+   - Validate phone format before saving
+
+
+════════════════════════════════════════════════════════════════════════════════
+STEP BY STEP SAVE PROCESS
+════════════════════════════════════════════════════════════════════════════════
+
+1. SAVE PHONE NUMBER FIRST:
+   - Go to Contact Information
+   - Clear current phone number
+   - Enter: +905551234567 (YOUR ACTUAL PHONE)
+   - Make sure no parentheses or dashes
+   - Save this section
+
+2. SAVE CONTACT INFO:
+   - First Name: Abidin
+   - Last Name: Ocal
+   - Email: abidin.ocal@camlica.com.tr
+   - Phone: (already saved in step 1)
+   - Save
+
+3. SAVE PROMOTIONAL TEXT:
+   - English version (copy from above)
+   - Turkish version (ASCII-safe version)
+   - Save
+
+4. SAVE DESCRIPTION:
+   - English description (copy from above)
+   - Turkish description (ASCII-safe version)
+   - Save
+
+5. SAVE KEYWORDS:
+   - English keywords (copy from above)
+   - Turkish keywords (ASCII-safe version)
+   - Save
+
+6. SAVE URLs:
+   - Support URL: https://crm.cmlc.com.tr/support
+   - Marketing URL: https://crm.cmlc.com.tr
+   - Save
+
+
+════════════════════════════════════════════════════════════════════════════════
+END
+════════════════════════════════════════════════════════════════════════════════

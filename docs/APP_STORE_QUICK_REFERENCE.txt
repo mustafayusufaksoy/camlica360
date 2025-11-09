@@ -1,0 +1,430 @@
+================================================================================
+CAMLICA360 - APP STORE QUICK REFERENCE (Copy & Paste Ready)
+================================================================================
+
+🎯 QUICK GUIDE: Fill these fields in App Store Connect in this order
+
+────────────────────────────────────────────────────────────────────────────────
+1. APP NAME & SUBTITLE
+────────────────────────────────────────────────────────────────────────────────
+
+App Name:
+Camlica360
+
+Subtitle (EN):
+Enterprise CRM on Mobile
+
+Subtitle (TR):
+Mobil İşletme Yönetimi Sistemi
+
+
+────────────────────────────────────────────────────────────────────────────────
+2. PROMOTIONAL TEXT (160 char max)
+────────────────────────────────────────────────────────────────────────────────
+
+ENGLISH:
+Manage your entire business on the go. Orders, HR, inventory, expenses—all integrated in one powerful mobile CRM platform.
+
+TURKISH:
+İşletmenizi her yerden yönetin. Siparişler, HR, depo, giderler—tüm entegre mobil CRM platformunda.
+
+
+────────────────────────────────────────────────────────────────────────────────
+3. DESCRIPTION
+────────────────────────────────────────────────────────────────────────────────
+
+⚠️ NOTE: Use the FULL descriptions from APP_STORE_COMPLETE_METADATA.md
+         They are too long to paste here but follow the structure below:
+
+ENGLISH Version:
+Start with: "Camlica360 is the mobile extension of the Camlica Enterprise CRM System..."
+Include: All feature categories (Dashboard, HR, Vehicle Orders, Inventory, etc.)
+Include: Security, Integration, Support info
+End with: Support contact and privacy note
+
+TURKISH Version:
+Start with: "Camlica360, Camlica İşletme Yönetim Sisteminin mobil uzantısıdır..."
+Include: Same categories in Turkish
+End with: Same support and privacy info in Turkish
+
+
+────────────────────────────────────────────────────────────────────────────────
+4. KEYWORDS
+────────────────────────────────────────────────────────────────────────────────
+
+ENGLISH:
+crm, enterprise, business management, hrm, human resources, vehicle order, inventory, expense, personnel, mobile crm, workflow, approval, dashboard, employee, organization, company management, shift, permission, leave request, dealer, inventory management, sales, procurement, budgeting, team management, business app, enterprise app, turkish crm, camlica
+
+TURKISH:
+crm, işletme yönetimi, insan kaynakları, yönetim, araç sipariş, depo, gider, personel, mobil crm, iş akışı, onay, pano, çalışan, organizasyon, şirket yönetimi, vardiya, izin, talebi, bayi, depo yönetimi, satış, tedarik, bütçeleme, takım yönetimi, iş uygulaması, kurumsal, türkçe crm, camlica, ik sistemi, sipariş yönetimi
+
+
+────────────────────────────────────────────────────────────────────────────────
+5. SUPPORT & MARKETING URLs
+────────────────────────────────────────────────────────────────────────────────
+
+Support URL:
+https://crm.cmlc.com.tr/support
+
+Marketing URL:
+https://crm.cmlc.com.tr
+
+Privacy Policy URL:
+https://crm.cmlc.com.tr/privacy-policy
+
+Terms of Service URL:
+https://crm.cmlc.com.tr/terms-of-service
+
+
+────────────────────────────────────────────────────────────────────────────────
+6. COPYRIGHT & LICENSE
+────────────────────────────────────────────────────────────────────────────────
+
+Copyright:
+© 2025 Camlica360. All rights reserved.
+
+
+────────────────────────────────────────────────────────────────────────────────
+7. CONTACT INFORMATION
+────────────────────────────────────────────────────────────────────────────────
+
+Name:
+Abidin Öcal
+
+Email:
+abidin.ocal@camlica.com.tr
+
+Phone:
++90 (XXX) XXX-XXXX  [UPDATE WITH ACTUAL PHONE]
+
+Address:
+[Your Company Address, Turkey]
+
+
+════════════════════════════════════════════════════════════════════════════════
+PART 2: BETA APP REVIEW INFORMATION
+════════════════════════════════════════════════════════════════════════════════
+
+────────────────────────────────────────────────────────────────────────────────
+✅ SIGN-IN REQUIRED
+────────────────────────────────────────────────────────────────────────────────
+
+CHECK THIS BOX: ☑ Sign-in required
+
+
+────────────────────────────────────────────────────────────────────────────────
+DEMO ACCOUNT CREDENTIALS
+────────────────────────────────────────────────────────────────────────────────
+
+Username:
+DEMO_12345
+
+Password:
+Demo@123456
+
+[Or separate fields if system requires:]
+Company Code: DEMO
+Employee ID: 12345
+Password: Demo@123456
+
+
+────────────────────────────────────────────────────────────────────────────────
+BETA APP REVIEW NOTES (Paste in Notes field)
+────────────────────────────────────────────────────────────────────────────────
+
+CAMLICA360 - ENTERPRISE CRM MOBILE APPLICATION
+
+APP OVERVIEW:
+Camlica360 is a comprehensive enterprise CRM application for iOS that brings
+the full power of the Camlica CRM system to mobile. It includes 16+ feature
+modules for managing HR, personnel, vehicle orders, inventory, expenses, and
+more.
+
+DEMO ACCOUNT:
+Company: Camlica (Demo)
+User: Abidin Öcal
+Role: Employee (has access to all standard user features)
+Login Credentials:
+  Company Code: DEMO
+  Employee ID: 12345
+  Password: Demo@123456
+
+WHAT TO EXPECT:
+
+1. LOGIN & AUTHENTICATION
+   - Login screen with company code, employee ID, and password
+   - Multi-factor authentication via OTP
+   - Secure session management
+
+2. MAIN FEATURES (via Bottom Tab Navigation):
+
+   HOME/DASHBOARD Tab:
+   - Dashboard with business KPIs
+   - Quick access widgets
+   - User welcome message
+
+   HR/PERSONNEL Tab (İzinler/İK):
+   - Leave request management
+   - Leave balance and charts
+   - Permission management
+   - Shift scheduling
+   - Organizational structure
+   - Employee directory
+
+   VEHICLE ORDERS Tab:
+   - Create and manage vehicle orders
+   - Order status tracking
+   - Approval workflow management
+   - Payment tracking
+   - Order history
+
+   INVENTORY Tab:
+   - Product catalog browsing
+   - Stock level tracking
+   - Search and filtering
+
+   EXPENSES Tab:
+   - Expense submission
+   - Receipt documentation
+   - Approval tracking
+
+   SETTINGS Tab:
+   - User profile management
+   - Language selection (EN/TR)
+   - Preference settings
+   - Logout
+
+3. TESTING INSTRUCTIONS:
+
+   Step 1 - Login:
+   • Enter Company Code: DEMO
+   • Enter Employee ID: 12345
+   • Enter Password: Demo@123456
+   • Tap Login
+
+   Step 2 - OTP Verification:
+   • Receive OTP (via email/SMS or see test OTP)
+   • Enter OTP code
+   • Tap Verify
+
+   Step 3 - Explore Features:
+   • Navigate using bottom tabs and side menu
+   • View leave balance and submit requests
+   • Browse vehicle orders
+   • Check inventory
+   • View company and personnel information
+
+   Step 4 - Language Switch:
+   • Go to Settings
+   • Change language to Turkish (or back to English)
+   • Verify UI updates
+
+   Step 5 - Logout:
+   • Go to Settings/Profile
+   • Tap Logout
+   • Verify return to login screen
+
+4. KEY FEATURES:
+
+   ✓ Multi-company support with easy switching
+   ✓ Complete HR management (leave, permissions, shifts)
+   ✓ Vehicle order lifecycle management
+   ✓ Real-time approval workflows
+   ✓ Inventory management and tracking
+   ✓ Expense tracking and documentation
+   ✓ Organizational chart and structure
+   ✓ Secure authentication with OTP
+   ✓ Bilingual interface (English & Turkish)
+   ✓ Mobile-optimized workflows
+   ✓ Offline data caching
+   ✓ Real-time notifications
+
+5. SECURITY & DATA HANDLING:
+
+   ✓ OAuth2 authentication
+   ✓ Multi-factor authentication (OTP)
+   ✓ HTTPS encrypted communication
+   ✓ JWT token-based sessions
+   ✓ Keychain storage for sensitive data
+   ✓ Automatic session timeout
+   ✓ Role-based access control
+   ✓ Secure logout clears all data
+
+6. SYSTEM REQUIREMENTS:
+
+   • iOS 15.0 or later
+   • iPhone (Universal app supports iPad)
+   • Active internet connection required
+   • Valid Camlica CRM account
+
+7. PERFORMANCE:
+
+   • Optimized for WiFi and cellular networks
+   • Fast app startup (< 2 seconds)
+   • Responsive UI on all iPhone sizes
+   • Intelligent data caching
+   • Low bandwidth consumption
+
+8. SUPPORT & CONTACT:
+
+   If you encounter any issues:
+
+   Contact: Abidin Öcal
+   Email: abidin.ocal@camlica.com.tr
+   Phone: +90 (XXX) XXX-XXXX
+   Timezone: Europe/Istanbul (UTC+3)
+   Response Time: Within 24 business hours
+
+   Support Portal: https://crm.cmlc.com.tr/support
+
+9. IMPORTANT NOTES:
+
+   • This is an enterprise B2B application
+   • Requires valid Camlica CRM credentials to access
+   • No personal data collection (business-only data)
+   • All data encrypted in transit
+   • Compliant with enterprise security standards
+   • Supports multi-company environments
+   • Real-time sync with desktop CRM system
+
+10. CONTENT RATING:
+
+    • Alcohol/Tobacco: None
+    • Gambling: None
+    • Violence: None
+    • Mature Content: None
+    • Medical/Health: No
+    • Kids Category: No
+    • Age Restriction: 13+ (business app)
+
+11. TESTING CHECKLIST:
+
+    ☐ Login with demo credentials
+    ☐ Complete OTP verification
+    ☐ Navigate dashboard
+    ☐ View leave information
+    ☐ Browse vehicle orders
+    ☐ Check inventory
+    ☐ View organization structure
+    ☐ Change language (EN ↔ TR)
+    ☐ Test logout
+    ☐ Verify responsive design
+    ☐ Check all tabs and menus
+    ☐ Confirm all features are accessible
+
+Thank you for reviewing Camlica360!
+
+
+════════════════════════════════════════════════════════════════════════════════
+PART 3: DEMO ACCOUNTS FOR DIFFERENT ROLES (Optional)
+════════════════════════════════════════════════════════════════════════════════
+
+If you want to demonstrate manager or admin features:
+
+DEMO ACCOUNT - EMPLOYEE (Standard User):
+─────────────────────────────────────────
+Company Code: DEMO
+Employee ID: 12345
+Password: Demo@123456
+Name: Abidin Öcal
+Role: Employee
+Access: Standard user features (submit requests, view dashboard)
+
+DEMO ACCOUNT - MANAGER (if available):
+──────────────────────────────────────
+Company Code: DEMO
+Employee ID: 12346
+Password: Demo@123456
+Name: [Manager Name]
+Role: Manager
+Access: Manager features (approve requests, manage team)
+
+DEMO ACCOUNT - ADMINISTRATOR (if available):
+──────────────────────────────────────────
+Company Code: DEMO
+Employee ID: 12347
+Password: Demo@123456
+Name: [Admin Name]
+Role: Administrator
+Access: System administration and settings
+
+
+════════════════════════════════════════════════════════════════════════════════
+IMPLEMENTATION NOTES FOR YOUR TEAM
+════════════════════════════════════════════════════════════════════════════════
+
+1. CREATE DEMO ACCOUNTS IN YOUR BACKEND:
+   - Create users with the credentials above
+   - Ensure they have proper roles and permissions
+   - Populate with sample data (leaves, orders, expenses)
+   - Test OTP delivery mechanism
+   - Set demo accounts to never expire
+
+2. PREPARE SCREENSHOTS:
+   - Login screen (with demo credentials visible as watermark)
+   - Dashboard/Home screen
+   - HR/Leave management screen
+   - Vehicle orders screen
+   - Inventory screen
+   - Settings/Profile screen
+   - Language selection (showing Turkish)
+   - Approval workflows (if manager)
+
+   Create screenshots in both:
+   - English language
+   - Turkish language
+
+3. TEST THOROUGHLY:
+   - Test all navigation paths
+   - Test all features with demo account
+   - Verify OTP delivery
+   - Check error handling
+   - Confirm language switching
+   - Test on various iPhone sizes
+   - Check offline behavior
+
+4. VERIFY URLS:
+   - Support URL must work
+   - Marketing URL must work
+   - Privacy policy must exist
+   - Terms of service must exist
+
+5. BUILD REQUIREMENTS:
+   - Build version: 1.0
+   - Build number: 1
+   - iOS minimum: 15.0
+   - App must be signed with proper certificate
+   - Must pass App Store validation
+
+
+════════════════════════════════════════════════════════════════════════════════
+SUBMISSION TIMELINE
+════════════════════════════════════════════════════════════════════════════════
+
+1. PREPARATION PHASE (Now):
+   ☐ Finalize all metadata ← You are here
+   ☐ Create/test demo accounts
+   ☐ Prepare screenshots
+   ☐ Test app thoroughly
+
+2. SUBMISSION PHASE:
+   ☐ Create build (1.0 - Build 1)
+   ☐ Upload to TestFlight
+   ☐ Fill all App Store metadata
+   ☐ Submit for review
+
+3. REVIEW PHASE:
+   ☐ Apple reviews app (2-24 hours)
+   ☐ Respond to any questions
+   ☐ Fix any issues
+   ☐ Resubmit if needed
+
+4. APPROVAL:
+   ☐ App approved for App Store
+   ☐ Schedule release
+   ☐ Monitor user feedback
+
+
+════════════════════════════════════════════════════════════════════════════════
+END OF QUICK REFERENCE
+════════════════════════════════════════════════════════════════════════════════
