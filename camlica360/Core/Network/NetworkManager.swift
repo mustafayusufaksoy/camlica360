@@ -9,7 +9,7 @@ struct APIResponse<T: Decodable>: Decodable {
 }
 
 /// Network Manager for handling HTTP requests
-class NetworkManager {
+class NetworkManager: NSObject {
     // MARK: - Singleton
 
     static let shared = NetworkManager()
@@ -22,11 +22,16 @@ class NetworkManager {
 
     // MARK: - Initialization
 
-    private init() {
+    private override init() {
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = APIConstants.requestTimeout
         configuration.timeoutIntervalForResource = APIConstants.resourceTimeout
-        self.session = URLSession(configuration: configuration)
+
+        // Create session with delegate for SSL bypass (development only)
+        let delegate = SSLBypassDelegate()
+        self.session = URLSession(configuration: configuration, delegate: delegate, delegateQueue: nil)
+
+        super.init()
     }
 
     // MARK: - Token Management
@@ -211,5 +216,30 @@ class NetworkManager {
                 print("   Data: \(jsonString)")
             }
         }
+    }
+}
+
+// MARK: - SSL Bypass Delegate (Development Only)
+
+/// URLSessionDelegate to bypass SSL certificate validation for localhost development
+/// ⚠️ WARNING: This should ONLY be used in development environment!
+private class SSLBypassDelegate: NSObject, URLSessionDelegate {
+    func urlSession(
+        _ session: URLSession,
+        didReceive challenge: URLAuthenticationChallenge,
+        completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void
+    ) {
+        // Only bypass SSL for localhost in development
+        #if DEBUG
+        if challenge.protectionSpace.host.contains("localhost") || challenge.protectionSpace.host.contains("127.0.0.1") {
+            print("⚠️ [NetworkManager] Bypassing SSL validation for localhost (Development mode)")
+            let credential = URLCredential(trust: challenge.protectionSpace.serverTrust!)
+            completionHandler(.useCredential, credential)
+            return
+        }
+        #endif
+
+        // For production or non-localhost, use default handling
+        completionHandler(.performDefaultHandling, nil)
     }
 }

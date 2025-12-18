@@ -38,6 +38,37 @@ enum LocalizationKeys: String {
     case loginForgotPassword = "auth_login_forgot_password"
     case loginButton = "auth_login_button"
 
+    // MARK: - Authentication - Signup
+
+    case signupWelcome = "auth_signup_welcome"
+    case signupSubtitle = "auth_signup_subtitle"
+    case signupEmail = "auth_signup_email"
+    case signupEmailPlaceholder = "auth_signup_email_placeholder"
+    case signupFullName = "auth_signup_full_name"
+    case signupFullNamePlaceholder = "auth_signup_full_name_placeholder"
+    case signupPhone = "auth_signup_phone"
+    case signupPhonePlaceholder = "auth_signup_phone_placeholder"
+    case signupCompanyCode = "auth_signup_company_code"
+    case signupCompanyCodePlaceholder = "auth_signup_company_code_placeholder"
+    case signupTermsAgreement = "auth_signup_terms_agreement"
+    case signupTermsDescription = "auth_signup_terms_description"
+    case signupTermsText = "auth_signup_terms_text"
+    case signupButton = "auth_signup_button"
+    case signupHaveAccount = "auth_signup_have_account"
+    case signupLoginLink = "auth_signup_login_link"
+    case signupSuccessTitle = "auth_signup_success_title"
+    case signupSuccessMessage = "auth_signup_success_message"
+    case signupSuccessDescription = "auth_signup_success_description"
+
+    // MARK: - Authentication - Signup Errors
+
+    case signupErrorEmail = "auth_signup_error_email"
+    case signupErrorEmailFormat = "auth_signup_error_email_format"
+    case signupErrorFullName = "auth_signup_error_full_name"
+    case signupErrorFullNameMinLength = "auth_signup_error_full_name_min_length"
+    case signupErrorPhoneFormat = "auth_signup_error_phone_format"
+    case signupErrorTerms = "auth_signup_error_terms"
+
     // MARK: - Authentication - Terms
 
     case loginTermsText = "auth_login_terms_text"
@@ -137,6 +168,15 @@ enum LocalizationKeys: String {
     case dateRangeThisMonth = "date_range_this_month"
     case dateRangeLastMonth = "date_range_last_month"
     case dateRange = "date_range"
+
+    // MARK: - Permissions (İzinler)
+
+    case permissionsTitle = "permissions_title"
+    case permissionsMyPermissions = "permissions_my_permissions"
+    case permissionsApprovalQueue = "permissions_approval_queue"
+    case permissionsApprovedView = "permissions_approved_view"
+    case permissionsApprovalStatus = "permissions_approval_status"
+    case permissionsUserLeaves = "permissions_user_leaves"
 
     // MARK: - Location Services
 

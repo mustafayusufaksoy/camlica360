@@ -18,6 +18,23 @@ class AuthService {
 
     // MARK: - Public Methods
 
+    /// Register user with email, name and optional phone/company code
+    /// - Parameters:
+    ///   - request: SignupRequestDto containing registration data
+    /// - Returns: Success response
+    func signup(request: SignupRequestDto) async throws {
+        // Make API call
+        struct EmptyResponse: Codable {}
+
+        let _: EmptyResponse = try await networkManager.request(
+            endpoint: .signup,
+            body: request,
+            responseType: EmptyResponse.self
+        )
+
+        print("✅ [AuthService] Signup request successful for email: \(request.email)")
+    }
+
     /// Perform login with company code, ID and password
     /// - Parameters:
     ///   - companyCode: Company code
@@ -45,9 +62,19 @@ class AuthService {
             responseType: LoginResponseDto.self
         )
 
-        // Save temp token and userId for 2FA step
-        _ = keychainManager.saveTempToken(response.token)
-        _ = keychainManager.saveUserId(response.userId)
+        // Check if 2FA is required
+        if response.requiresTwoFactor {
+            // 2FA enabled - save temp token for OTP verification
+            _ = keychainManager.saveTempToken(response.token)
+            _ = keychainManager.saveUserId(response.userId)
+            print("🔐 [AuthService] 2FA required - temp token saved")
+        } else {
+            // 2FA disabled - token is the final access token
+            _ = keychainManager.saveAccessToken(response.token)
+            _ = keychainManager.saveUserId(response.userId)
+            networkManager.setAccessToken(response.token)
+            print("✅ [AuthService] 2FA disabled - access token saved directly")
+        }
 
         // Save company code
         if let companyCode = response.companyCode {
@@ -56,10 +83,10 @@ class AuthService {
             networkManager.setCompanyCode(companyCode)
         }
 
-        // Extract user info from temp token (has fullName)
+        // Extract user info from token (has fullName)
         if let userInfo = UserInfo.from(token: response.token) {
             userDefaultsManager.saveUserInfo(userInfo)
-            print("✅ [AuthService] User info extracted from temp token: \(userInfo.displayName)")
+            print("✅ [AuthService] User info extracted from token: \(userInfo.displayName)")
         }
 
         // Save credentials if remember me is enabled

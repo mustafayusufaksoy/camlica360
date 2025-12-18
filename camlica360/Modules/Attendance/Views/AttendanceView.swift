@@ -13,12 +13,12 @@ struct AttendanceView: View {
                     // Header
                     VStack(spacing: AppSpacing.xs) {
                         Text("attendance_title".localized)
-                            .font(AppFonts.bold(size: 28))
+                            .font(AppFonts.custom(size: 28, weight: .bold))
                             .foregroundColor(AppColors.primary)
 
                         Text("attendance_subtitle".localized)
-                            .font(AppFonts.regular(size: 14))
-                            .foregroundColor(AppColors.secondary)
+                            .font(AppFonts.custom(size: 14, weight: .regular))
+                            .foregroundColor(AppColors.neutral600)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, AppSpacing.md)
@@ -80,7 +80,7 @@ struct AttendanceView: View {
                             }
                             .frame(maxWidth: .infinity)
                             .padding(AppSpacing.md)
-                            .background(AppColors.secondary)
+                            .background(AppColors.neutral600)
                             .foregroundColor(.white)
                             .cornerRadius(AppSpacing.xs)
                         }
@@ -127,8 +127,8 @@ struct LocationStatusCard: View {
             HStack {
                 VStack(alignment: .leading, spacing: AppSpacing.xs) {
                     Text("location_status".localized)
-                        .font(AppFonts.bold(size: 14))
-                        .foregroundColor(AppColors.secondary)
+                        .font(AppFonts.custom(size: 14, weight: .bold))
+                        .foregroundColor(AppColors.neutral600)
 
                     if isInsideGeofence, let location = currentLocation {
                         VStack(alignment: .leading, spacing: AppSpacing.xs) {
@@ -136,18 +136,18 @@ struct LocationStatusCard: View {
                                 Image(systemName: "mappin.circle.fill")
                                     .foregroundColor(.green)
                                 Text(location.name)
-                                    .font(AppFonts.medium(size: 16))
+                                    .font(AppFonts.custom(size: 16, weight: .medium))
                             }
                             Text(location.address)
-                                .font(AppFonts.regular(size: 12))
-                                .foregroundColor(AppColors.secondary)
+                                .font(AppFonts.custom(size: 12, weight: .regular))
+                                .foregroundColor(AppColors.neutral600)
                         }
                     } else {
                         HStack {
                             Image(systemName: "location.slash")
                                 .foregroundColor(.red)
                             Text("not_in_workplace".localized)
-                                .font(AppFonts.medium(size: 16))
+                                .font(AppFonts.custom(size: 16, weight: .medium))
                         }
                     }
                 }
@@ -155,7 +155,7 @@ struct LocationStatusCard: View {
             }
         }
         .padding(AppSpacing.md)
-        .background(AppColors.cardBackground)
+        .background(AppColors.white)
         .cornerRadius(AppSpacing.xs)
         .overlay(
             RoundedRectangle(cornerRadius: AppSpacing.xs)
@@ -215,8 +215,8 @@ struct CheckInOutButtonsView: View {
 
             if let lastEvent = lastEventType {
                 Text("last_event: \(lastEvent.displayName)")
-                    .font(AppFonts.regular(size: 12))
-                    .foregroundColor(AppColors.secondary)
+                    .font(AppFonts.custom(size: 12, weight: .regular))
+                    .foregroundColor(AppColors.neutral600)
             }
         }
     }
@@ -237,10 +237,10 @@ struct PendingLogsCard: View {
                         .foregroundColor(.orange)
                     VStack(alignment: .leading) {
                         Text("pending_logs".localized)
-                            .font(AppFonts.medium(size: 14))
+                            .font(AppFonts.custom(size: 14, weight: .medium))
                         Text(String(format: "pending_logs_count".localized, count))
-                            .font(AppFonts.regular(size: 12))
-                            .foregroundColor(AppColors.secondary)
+                            .font(AppFonts.custom(size: 12, weight: .regular))
+                            .foregroundColor(AppColors.neutral600)
                     }
                 }
                 Spacer()
@@ -250,7 +250,7 @@ struct PendingLogsCard: View {
                             .tint(.white)
                     } else {
                         Text("sync".localized)
-                            .font(AppFonts.medium(size: 12))
+                            .font(AppFonts.custom(size: 12, weight: .medium))
                     }
                 }
                 .padding(.horizontal, AppSpacing.sm)
@@ -279,23 +279,23 @@ struct TodaysLogsCard: View {
         VStack(spacing: AppSpacing.sm) {
             HStack {
                 Text("todays_logs".localized)
-                    .font(AppFonts.bold(size: 14))
+                    .font(AppFonts.custom(size: 14, weight: .bold))
                 Spacer()
                 Text("\(logs.count) entries")
-                    .font(AppFonts.regular(size: 12))
-                    .foregroundColor(AppColors.secondary)
+                    .font(AppFonts.custom(size: 12, weight: .regular))
+                    .foregroundColor(AppColors.neutral600)
             }
 
             VStack(spacing: AppSpacing.xs) {
                 ForEach(logs.sorted(by: { $0.timestamp > $1.timestamp }).prefix(5)) { log in
                     LogEntryRow(log: log)
                         .padding(.vertical, AppSpacing.xs)
-                        .borderBottom(color: AppColors.border, width: 0.5)
+                        .borderBottom(color: AppColors.neutral200, width: 0.5)
                 }
             }
         }
         .padding(AppSpacing.md)
-        .background(AppColors.cardBackground)
+        .background(AppColors.white)
         .cornerRadius(AppSpacing.xs)
     }
 }
@@ -312,10 +312,10 @@ struct LogEntryRow: View {
 
             VStack(alignment: .leading, spacing: 2) {
                 Text(log.eventType.displayName)
-                    .font(AppFonts.medium(size: 13))
+                    .font(AppFonts.custom(size: 13, weight: .medium))
                 Text(log.timestamp.formatted(date: .omitted, time: .shortened))
-                    .font(AppFonts.regular(size: 11))
-                    .foregroundColor(AppColors.secondary)
+                    .font(AppFonts.custom(size: 11, weight: .regular))
+                    .foregroundColor(AppColors.neutral600)
             }
 
             Spacer()

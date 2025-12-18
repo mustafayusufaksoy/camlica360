@@ -7,41 +7,51 @@ struct IzinlerView: View {
     var body: some View {
         Group {
             if roleViewModel.isLoading {
-                // Loading state
-                VStack(spacing: 16) {
-                    ProgressView()
-                        .scaleEffect(1.5)
-                    Text("Yükleniyor...")
-                        .font(.system(size: 16))
-                        .foregroundColor(.gray)
-                }
-            } else if let error = roleViewModel.errorMessage {
-                // Error state
-                VStack(spacing: 16) {
-                    Image(systemName: "exclamationmark.triangle")
-                        .font(.system(size: 60))
-                        .foregroundColor(.red)
-
-                    Text("Hata")
-                        .font(.system(size: 20, weight: .semibold))
-
-                    Text(error)
-                        .font(.system(size: 14))
-                        .foregroundColor(.gray)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 32)
-
-                    Button("Tekrar Dene") {
-                        Task {
-                            await roleViewModel.checkRole()
-                        }
+                // Loading state - centered in available space
+                VStack {
+                    Spacer()
+                    VStack(spacing: 16) {
+                        ProgressView()
+                            .scaleEffect(1.5)
+                        Text("Yükleniyor...")
+                            .font(.system(size: 16))
+                            .foregroundColor(.gray)
                     }
-                    .padding(.horizontal, 32)
-                    .padding(.vertical, 12)
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
+                    Spacer()
                 }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            } else if let error = roleViewModel.errorMessage {
+                // Error state - centered in available space
+                VStack {
+                    Spacer()
+                    VStack(spacing: 16) {
+                        Image(systemName: "exclamationmark.triangle")
+                            .font(.system(size: 60))
+                            .foregroundColor(.red)
+
+                        Text("Hata")
+                            .font(.system(size: 20, weight: .semibold))
+
+                        Text(error)
+                            .font(.system(size: 14))
+                            .foregroundColor(.gray)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 32)
+
+                        Button("Tekrar Dene") {
+                            Task {
+                                await roleViewModel.checkRole()
+                            }
+                        }
+                        .padding(.horizontal, 32)
+                        .padding(.vertical, 12)
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                    }
+                    Spacer()
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             } else if let role = roleViewModel.userRole {
                 // Show view based on role
                 if role.isManager {
@@ -52,13 +62,18 @@ struct IzinlerView: View {
                     EmployeeDashboardView()
                 }
             } else {
-                // No role loaded yet
-                VStack(spacing: 16) {
-                    ProgressView()
-                    Text("Başlatılıyor...")
-                        .font(.system(size: 16))
-                        .foregroundColor(.gray)
+                // No role loaded yet - centered in available space
+                VStack {
+                    Spacer()
+                    VStack(spacing: 16) {
+                        ProgressView()
+                        Text("Başlatılıyor...")
+                            .font(.system(size: 16))
+                            .foregroundColor(.gray)
+                    }
+                    Spacer()
                 }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
         .task {
@@ -118,21 +133,32 @@ struct ManagerTabView: View {
 
     var body: some View {
         NavigationView {
-            VStack(spacing: 0) {
-                // Segmented Control at top
-                Picker("Tab", selection: $selectedTab) {
-                    Text("İzinlerim").tag(0)
-                    Text("Onay Kuyruğu").tag(1)
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                .tint(AppColors.primary) // Use primary color for active tab
-                .padding(.horizontal, 16)
-                .padding(.top, 8)
-                .padding(.bottom, 12)
-                .background(Color.white)
+            ZStack {
+                // Background for entire screen
+                AppColors.background
+                    .ignoresSafeArea()
 
-                // Content based on selected tab
-                TabContent(selectedTab: selectedTab)
+                VStack(spacing: 0) {
+                    // Segmented Control at top
+                    Picker("Tab", selection: $selectedTab) {
+                        Text("İzinlerim")
+                            .foregroundColor(AppColors.black)
+                            .tag(0)
+                        Text("Onay Kuyruğu")
+                            .foregroundColor(AppColors.black)
+                            .tag(1)
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    .tint(AppColors.primary) // Use primary color for active tab
+                    .colorMultiply(AppColors.black) // Text color
+                    .padding(.horizontal, 16)
+                    .padding(.top, 8)
+                    .padding(.bottom, 12)
+                    .background(AppColors.white)
+
+                    // Content based on selected tab
+                    TabContent(selectedTab: selectedTab)
+                }
             }
             .navigationBarHidden(true)
         }
@@ -161,31 +187,12 @@ struct EmployeeDashboardContentView: View {
     @StateObject private var viewModel = IzinlerViewModel()
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: AppSpacing.lg) {
-                // Monthly chart
-                MonthlyChartCard(chartData: viewModel.chartData)
+        ZStack {
+            // Background for entire screen
+            AppColors.background
+                .ignoresSafeArea()
 
-                // Approval status
-                ApprovalStatusCard(statusData: viewModel.approvalStatusData)
-
-                // User leaves (horizontal scroll)
-                UserLeavesSection(leaveData: viewModel.userLeaveData)
-
-                // Leave requests table
-                LeaveRequestsSection(requests: viewModel.leaveRequests)
-            }
-            .padding(AppSpacing.lg)
-        }
-    }
-}
-
-/// Employee dashboard view (original IzinlerView content)
-struct EmployeeDashboardView: View {
-    @StateObject private var viewModel = IzinlerViewModel()
-
-    var body: some View {
-        NavigationView {
+            // Content
             ScrollView {
                 VStack(spacing: AppSpacing.lg) {
                     // Monthly chart
@@ -202,8 +209,42 @@ struct EmployeeDashboardView: View {
                 }
                 .padding(AppSpacing.lg)
             }
+        }
+    }
+}
+
+/// Employee dashboard view (original IzinlerView content)
+struct EmployeeDashboardView: View {
+    @StateObject private var viewModel = IzinlerViewModel()
+
+    var body: some View {
+        NavigationView {
+            ZStack {
+                // Background for entire screen
+                AppColors.background
+                    .ignoresSafeArea()
+
+                // Content
+                ScrollView {
+                    VStack(spacing: AppSpacing.lg) {
+                        // Monthly chart
+                        MonthlyChartCard(chartData: viewModel.chartData)
+
+                        // Approval status
+                        ApprovalStatusCard(statusData: viewModel.approvalStatusData)
+
+                        // User leaves (horizontal scroll)
+                        UserLeavesSection(leaveData: viewModel.userLeaveData)
+
+                        // Leave requests table
+                        LeaveRequestsSection(requests: viewModel.leaveRequests)
+                    }
+                    .padding(AppSpacing.lg)
+                }
+            }
             .navigationTitle("İzinlerim")
             .navigationBarTitleDisplayMode(.large)
+            .toolbarColorScheme(.light, for: .navigationBar)
         }
     }
 }

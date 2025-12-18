@@ -9,6 +9,7 @@ enum Endpoint {
     case resetPassword
     case resetPasswordConfirm
     case changePassword
+    case signup
 
     // Personnel
     case getPersonnelById(String)
@@ -45,6 +46,8 @@ enum Endpoint {
             return "/Auth/resetPasswordConfirm"
         case .changePassword:
             return "/Auth/changePassword"
+        case .signup:
+            return "/SelfRegistrationRequest/createSelfRegistrationRequest"
         case .getPersonnelById(let id):
             return "/CrmPersonnel/getCrmPersonnelById?id=\(id)"
         case .getEmployeeDashboard(let personnelId, let year):
@@ -89,7 +92,7 @@ enum Endpoint {
 
     var method: HTTPMethod {
         switch self {
-        case .login, .verify, .sendOtpMail, .resetPassword, .resetPasswordConfirm, .changePassword, .createPermissionRequest,
+        case .login, .verify, .sendOtpMail, .resetPassword, .resetPasswordConfirm, .changePassword, .signup, .createPermissionRequest,
              .approveRequest, .rejectRequest:
             return .post
         case .getPersonnelById, .getEmployeeDashboard, .getAllPermissionRequests, .getPermissionTypes,

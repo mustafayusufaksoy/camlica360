@@ -21,7 +21,7 @@ struct AttendanceHistoryView: View {
                         }
                         Spacer()
                         Text("attendance_history".localized)
-                            .font(AppFonts.bold(size: 18))
+                            .font(AppFonts.custom(size: 18, weight: .bold))
                         Spacer()
                         Image(systemName: "chevron.left")
                             .opacity(0) // For spacing
@@ -49,10 +49,10 @@ struct AttendanceHistoryView: View {
                         VStack(spacing: AppSpacing.md) {
                             Image(systemName: "calendar")
                                 .font(.system(size: 48))
-                                .foregroundColor(AppColors.secondary)
+                                .foregroundColor(AppColors.neutral500)
                             Text("no_logs_found".localized)
-                                .font(AppFonts.medium(size: 16))
-                                .foregroundColor(AppColors.secondary)
+                                .font(AppFonts.custom(size: 16, weight: .medium))
+                                .foregroundColor(AppColors.neutral600)
                         }
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                     } else {
@@ -95,20 +95,20 @@ struct DailySummaryCard: View {
             HStack {
                 VStack(alignment: .leading, spacing: AppSpacing.xs) {
                     Text(summary.dateString)
-                        .font(AppFonts.bold(size: 16))
+                        .font(AppFonts.custom(size: 16, weight: .bold))
                     Text(summary.statusString)
-                        .font(AppFonts.regular(size: 12))
-                        .foregroundColor(AppColors.secondary)
+                        .font(AppFonts.custom(size: 12, weight: .regular))
+                        .foregroundColor(AppColors.neutral600)
                 }
 
                 Spacer()
 
                 VStack(alignment: .trailing, spacing: AppSpacing.xs) {
                     Text(summary.workingHoursString)
-                        .font(AppFonts.bold(size: 16))
+                        .font(AppFonts.custom(size: 16, weight: .bold))
                     Text("working_hours".localized)
-                        .font(AppFonts.regular(size: 11))
-                        .foregroundColor(AppColors.secondary)
+                        .font(AppFonts.custom(size: 11, weight: .regular))
+                        .foregroundColor(AppColors.neutral600)
                 }
 
                 Button(action: { withAnimation { isExpanded.toggle() } }) {
@@ -133,9 +133,9 @@ struct DailySummaryCard: View {
                             Text("first_check_in".localized)
                             Spacer()
                             Text(firstCheckIn.formatted(date: .omitted, time: .shortened))
-                                .font(AppFonts.medium(size: 13))
+                                .font(AppFonts.custom(size: 13, weight: .medium))
                         }
-                        .font(AppFonts.regular(size: 13))
+                        .font(AppFonts.custom(size: 13, weight: .regular))
                         .padding(.vertical, AppSpacing.xs)
                     }
 
@@ -147,9 +147,9 @@ struct DailySummaryCard: View {
                             Text("last_check_out".localized)
                             Spacer()
                             Text(lastCheckOut.formatted(date: .omitted, time: .shortened))
-                                .font(AppFonts.medium(size: 13))
+                                .font(AppFonts.custom(size: 13, weight: .medium))
                         }
-                        .font(AppFonts.regular(size: 13))
+                        .font(AppFonts.custom(size: 13, weight: .regular))
                         .padding(.vertical, AppSpacing.xs)
                     }
 
@@ -160,9 +160,9 @@ struct DailySummaryCard: View {
                         Text("total_events".localized)
                         Spacer()
                         Text("\(summary.checkInCount + summary.checkOutCount)")
-                            .font(AppFonts.medium(size: 13))
+                            .font(AppFonts.custom(size: 13, weight: .medium))
                     }
-                    .font(AppFonts.regular(size: 13))
+                    .font(AppFonts.custom(size: 13, weight: .regular))
                     .padding(.vertical, AppSpacing.xs)
 
                     // Log entries
@@ -172,8 +172,8 @@ struct DailySummaryCard: View {
 
                         VStack(spacing: AppSpacing.xs) {
                             Text("all_entries".localized)
-                                .font(AppFonts.bold(size: 12))
-                                .foregroundColor(AppColors.secondary)
+                                .font(AppFonts.custom(size: 12, weight: .bold))
+                                .foregroundColor(AppColors.neutral600)
 
                             ForEach(summary.logs) { log in
                                 LogEntryRow(log: log)
@@ -185,11 +185,11 @@ struct DailySummaryCard: View {
                 .padding(AppSpacing.md)
             }
         }
-        .background(AppColors.cardBackground)
+        .background(AppColors.white)
         .cornerRadius(AppSpacing.xs)
         .overlay(
             RoundedRectangle(cornerRadius: AppSpacing.xs)
-                .stroke(AppColors.border, lineWidth: 0.5)
+                .stroke(AppColors.neutral200, lineWidth: 0.5)
         )
     }
 }

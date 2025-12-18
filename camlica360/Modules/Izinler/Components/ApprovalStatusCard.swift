@@ -33,6 +33,13 @@ struct ApprovalStatusCard: View {
 private struct ApprovalStatusRow: View {
     let data: ApprovalStatusData
 
+    // Safe percentage value (0-100, no NaN)
+    private var safePercentage: CGFloat {
+        let percentage = CGFloat(data.percentage)
+        guard !percentage.isNaN && !percentage.isInfinite else { return 0 }
+        return min(max(percentage, 0), 100) // Clamp between 0-100
+    }
+
     var body: some View {
         VStack(spacing: AppSpacing.xs) {
             // Title and value
@@ -63,7 +70,7 @@ private struct ApprovalStatusRow: View {
                     // Progress
                     RoundedRectangle(cornerRadius: 6)
                         .fill(data.color)
-                        .frame(width: geometry.size.width * CGFloat(data.percentage) / 100, height: 16)
+                        .frame(width: geometry.size.width * safePercentage / 100, height: 16)
                 }
             }
             .frame(height: 16)

@@ -26,6 +26,9 @@
     "%lld" : {
 
     },
+    "%lld entries" : {
+
+    },
     "%lld gün" : {
 
     },
@@ -738,10 +741,438 @@
         }
       }
     },
+    "auth_signup_button" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create Account"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hesap Oluştur"
+          }
+        }
+      }
+    },
+    "auth_signup_company_code" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Company Code (Optional)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şirket Kodu (Opsiyonel)"
+          }
+        }
+      }
+    },
+    "auth_signup_company_code_placeholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter company code"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şirket kodunu girin"
+          }
+        }
+      }
+    },
+    "auth_signup_email" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Email Address"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-posta Adresi"
+          }
+        }
+      }
+    },
+    "auth_signup_email_placeholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "your.email@example.com"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sizin.email@example.com"
+          }
+        }
+      }
+    },
+    "auth_signup_error_email" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Email is required"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-posta gereklidir"
+          }
+        }
+      }
+    },
+    "auth_signup_error_email_format" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter a valid email address"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lütfen geçerli bir e-posta adresi girin"
+          }
+        }
+      }
+    },
+    "auth_signup_error_full_name" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full name is required"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tam ad gereklidir"
+          }
+        }
+      }
+    },
+    "auth_signup_error_full_name_min_length" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full name must be at least 2 characters"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tam ad en az 2 karakter olmalıdır"
+          }
+        }
+      }
+    },
+    "auth_signup_error_phone_format" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter a valid phone number"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lütfen geçerli bir telefon numarası girin"
+          }
+        }
+      }
+    },
+    "auth_signup_error_terms" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You must agree to the terms and conditions"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şartlar ve Koşulları kabul etmelisiniz"
+          }
+        }
+      }
+    },
+    "auth_signup_full_name" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full Name"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tam Ad"
+          }
+        }
+      }
+    },
+    "auth_signup_full_name_placeholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your full name"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tam adınızı girin"
+          }
+        }
+      }
+    },
+    "auth_signup_have_account" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Already have an account?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zaten bir hesabın var mı?"
+          }
+        }
+      }
+    },
+    "auth_signup_login_link" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giriş Yap"
+          }
+        }
+      }
+    },
+    "auth_signup_phone" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phone Number (Optional)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Telefon Numarası (Opsiyonel)"
+          }
+        }
+      }
+    },
+    "auth_signup_phone_placeholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5XX XXX XXXX"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5XX XXX XXXX"
+          }
+        }
+      }
+    },
+    "auth_signup_subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create your account to get started"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başlamak için hesabınızı oluşturun"
+          }
+        }
+      }
+    },
+    "auth_signup_success_description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your registration request has been submitted successfully"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kayıt talebiniz başarıyla gönderilmiştir"
+          }
+        }
+      }
+    },
+    "auth_signup_success_message" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Registration successful! Your request will be reviewed soon."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kayıt başarılı! Talebiniz kısa sürede incelenecektir."
+          }
+        }
+      }
+    },
+    "auth_signup_success_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Success"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başarılı"
+          }
+        }
+      }
+    },
+    "auth_signup_terms_agreement" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I agree to the Terms and Conditions"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şartlar ve Koşulları kabul ediyorum"
+          }
+        }
+      }
+    },
+    "auth_signup_terms_description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "By registering, you agree to our Terms and Conditions and Privacy Policy"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kayıt yaparak Şartlar ve Koşulları ile Gizlilik Politikasını kabul etmiş olursunuz"
+          }
+        }
+      }
+    },
+    "auth_signup_terms_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "By creating an account, you agree to our Terms of Service and Privacy Policy."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hesap oluşturarak, Hizmet Şartlarımız ve Gizlilik Politikasını kabul etmiş olursunuz."
+          }
+        }
+      }
+    },
+    "auth_signup_welcome" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign Up"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaydol"
+          }
+        }
+      }
+    },
     "Ay" : {
 
     },
     "Başarılı" : {
+
+    },
+    "Başlamaya hazırsınız!" : {
 
     },
     "Başlatılıyor..." : {
@@ -1064,6 +1495,9 @@
     "Giriş başarılı!" : {
 
     },
+    "Giriş Sayfasına Dön" : {
+
+    },
     "Gözat" : {
 
     },
@@ -1082,7 +1516,16 @@
     "Hello, world!" : {
 
     },
+    "Henüz onaylanmış izin bulunmuyor" : {
+
+    },
     "Henüz onaylanmış veya reddedilmiş bir talep bulunmamaktadır" : {
+
+    },
+    "Hesabınızı oluşturdunuz. En kısa zamanda \nsizinle iletişime geçilecektir." : {
+
+    },
+    "Hesapların yok mu?" : {
 
     },
     "home_completed_title" : {
@@ -1243,6 +1686,12 @@
     "Kalan" : {
 
     },
+    "Kaydol" : {
+
+    },
+    "Kayıt Oluşturuldu!" : {
+
+    },
     "Kod süresi:" : {
 
     },
@@ -1250,6 +1699,9 @@
 
     },
     "Kullanılan" : {
+
+    },
+    "last_event: %@" : {
 
     },
     "login_title" : {
@@ -1342,6 +1794,9 @@
 
     },
     "Tarih Seçin" : {
+
+    },
+    "Tebrikler %@!" : {
 
     },
     "Tekrar Dene" : {

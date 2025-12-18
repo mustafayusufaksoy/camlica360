@@ -10,15 +10,31 @@ struct APIConstants {
         case production
     }
 
-    static let currentEnvironment: Environment = .development
+    // MARK: - Environment Override
+
+    /// Set this to true to force production environment in Debug builds
+    /// Useful for testing production API while developing
+    private static let forceProduction = true
+
+    // Automatically select environment based on build configuration
+    // Debug builds (Xcode Run, Simulator) → Development (unless forceProduction = true)
+    // Release builds (TestFlight, App Store) → Production
+    static let currentEnvironment: Environment = {
+        #if DEBUG
+        return forceProduction ? .production : .development
+        #else
+        return .production
+        #endif
+    }()
 
     // MARK: - Base URL
 
     /// Base API URL for CRM Service
     static let baseURL: String = {
+        
         switch currentEnvironment {
         case .development:
-            return "http://localhost:5000/api"
+            return "https://localhost:5054/api"
         case .production:
             return "https://crm.cmlc.com.tr/api"
         }
@@ -28,13 +44,13 @@ struct APIConstants {
     static let hrBaseURL: String = {
         switch currentEnvironment {
         case .development:
-            return "http://localhost:5053"
+            return "https://localhost:5053"
         case .production:
             return "https://crm.cmlc.com.tr"
         }
     }()
 
-    // MARK: - Timeouts
+    // MARK: - Timeouts00000
 
     /// Request timeout interval in seconds
     static let requestTimeout: TimeInterval = 30

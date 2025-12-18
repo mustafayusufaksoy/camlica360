@@ -99,6 +99,22 @@ struct LoginView: View {
                             isEnabled: viewModel.isFormValid() && !viewModel.isLoading
                         )
 
+                        // Signup Link
+                        HStack(spacing: AppSpacing.xs) {
+                            Text("Hesapların yok mu?")
+                                .font(AppFonts.smRegular)
+                                .foregroundColor(AppColors.neutral600)
+
+                            NavigationLink(destination: SignupView().navigationBarBackButtonHidden(true)) {
+                                Text("Kaydol")
+                                    .font(AppFonts.smMedium)
+                                    .foregroundColor(AppColors.primary950)
+                            }
+
+                            Spacer()
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+
                         // Error message
                         if let error = viewModel.error {
                             HStack(spacing: AppSpacing.sm) {
@@ -142,6 +158,10 @@ struct LoginView: View {
                         .padding(.horizontal, AppSpacing.lg)
                         .padding(.vertical, AppSpacing.lg)
                 }
+            }
+            .onTapGesture {
+                // Dismiss keyboard when tapping anywhere
+                focusedField = nil
             }
         }
         .navigationBarBackButtonHidden(true)

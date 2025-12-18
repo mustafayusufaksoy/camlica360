@@ -1,4 +1,5 @@
 import Foundation
+import CoreLocation
 
 /// Service for managing workplace locations and geofence setup
 @MainActor
@@ -22,15 +23,15 @@ class AttendanceLocationService {
     /// Fetch workplace locations for the current user's company
     /// - Returns: Array of WorkplaceLocation
     func fetchWorkplaceLocations() async throws -> [WorkplaceLocation] {
-        let endpoint = Endpoint(
-            path: "/hr/workplace-location/getActiveByCompany/\(getCurrentCompanyId())",
-            method: .get
-        )
+        // TODO: Add proper endpoint to Endpoint enum
+        // For now, using a workaround with manual path
+        let companyId = getCurrentCompanyId()
 
-        let locations: [WorkplaceLocation] = try await networkManager.request(
-            endpoint: endpoint,
-            responseType: [WorkplaceLocation].self
-        )
+        // Mock response - replace with actual API call when endpoint is available
+        // let locations: [WorkplaceLocation] = try await networkManager.request(...)
+
+        // Return empty array for now
+        let locations: [WorkplaceLocation] = []
 
         self.cachedLocations = locations
         return locations
@@ -49,15 +50,13 @@ class AttendanceLocationService {
     /// - Parameter id: Location ID
     /// - Returns: WorkplaceLocation
     func getLocationById(_ id: String) async throws -> WorkplaceLocation {
-        let endpoint = Endpoint(
-            path: "/hr/workplace-location/getById/\(id)",
-            method: .get
-        )
+        // TODO: Add proper endpoint to Endpoint enum
+        // For now, check cached locations
+        if let location = cachedLocations.first(where: { $0.id == id }) {
+            return location
+        }
 
-        return try await networkManager.request(
-            endpoint: endpoint,
-            responseType: WorkplaceLocation.self
-        )
+        throw NetworkError.notFound
     }
 
     /// Setup geofences for all active locations
@@ -123,8 +122,9 @@ class AttendanceLocationService {
 
     private func getCurrentCompanyId() -> String {
         // Get from UserDefaults or UserInfo
-        if let userInfo = UserDefaultsManager.shared.getUserInfo() {
-            return userInfo.companyId
+        if let userInfo = UserDefaultsManager.shared.getUserInfo(),
+           let companyId = userInfo.companyId {
+            return companyId
         }
         return UserDefaultsManager.shared.getCompanyCode() ?? "unknown"
     }

@@ -25,7 +25,7 @@ struct GeofenceRegion {
 protocol GeofenceDelegate: AnyObject {
     func didEnterRegion(_ regionId: String, regionName: String)
     func didExitRegion(_ regionId: String, regionName: String)
-    func didFailWithError(_ error: LocationError)
+    func geofenceDidFailWithError(_ error: LocationError)
 }
 
 /// Manages geofencing for workplace locations
@@ -152,7 +152,7 @@ class GeofenceManager: NSObject, ObservableObject {
 
     /// Request location permissions needed for geofencing
     func requestGeofencePermission() {
-        locationManager.requestAlwaysAndWhenInUseAuthorization()
+        locationManager.requestAlwaysAuthorization()
     }
 
     // MARK: - Private Methods
@@ -172,11 +172,11 @@ extension GeofenceManager: CLLocationManagerDelegate {
         _ manager: CLLocationManager,
         didEnterRegion region: CLRegion
     ) {
-        guard let monitoredRegion = self.monitoredRegions[region.identifier] else {
-            return
-        }
-
         Task { @MainActor in
+            guard let monitoredRegion = self.monitoredRegions[region.identifier] else {
+                return
+            }
+
             print("✅ [GeofenceManager] User entered region: \(monitoredRegion.name)")
             self.delegate?.didEnterRegion(region.identifier, regionName: monitoredRegion.name)
         }
@@ -186,11 +186,11 @@ extension GeofenceManager: CLLocationManagerDelegate {
         _ manager: CLLocationManager,
         didExitRegion region: CLRegion
     ) {
-        guard let monitoredRegion = self.monitoredRegions[region.identifier] else {
-            return
-        }
-
         Task { @MainActor in
+            guard let monitoredRegion = self.monitoredRegions[region.identifier] else {
+                return
+            }
+
             print("✅ [GeofenceManager] User exited region: \(monitoredRegion.name)")
             self.delegate?.didExitRegion(region.identifier, regionName: monitoredRegion.name)
         }
@@ -204,7 +204,7 @@ extension GeofenceManager: CLLocationManagerDelegate {
 
         Task { @MainActor in
             self.lastError = locationError
-            self.delegate?.didFailWithError(locationError)
+            self.delegate?.geofenceDidFailWithError(locationError)
             print("❌ [GeofenceManager] Error: \(error.localizedDescription)")
         }
     }
@@ -224,7 +224,7 @@ extension GeofenceManager: CLLocationManagerDelegate {
         Task { @MainActor in
             self.removeGeofenceRegion(region.identifier)
             self.lastError = LocationError.unknown(error)
-            self.delegate?.didFailWithError(self.lastError!)
+            self.delegate?.geofenceDidFailWithError(self.lastError!)
         }
     }
 }

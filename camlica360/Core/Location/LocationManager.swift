@@ -82,7 +82,7 @@ class LocationManager: NSObject, ObservableObject {
         switch authorizationStatus {
         case .notDetermined:
             if alwaysAllow {
-                locationManager.requestAlwaysAndWhenInUseAuthorization()
+                locationManager.requestAlwaysAuthorization()
             } else {
                 locationManager.requestWhenInUseAuthorization()
             }

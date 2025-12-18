@@ -256,8 +256,12 @@ extension AttendanceViewModel: GeofenceDelegate {
     nonisolated func didEnterRegion(_ regionId: String, regionName: String) {
         print("✅ Entered region: \(regionName)")
         Task { @MainActor [weak self] in
-            self?.currentWorkplaceLocation = await self?.locationService.getLocationById(regionId) ?? nil
-            self?.isInsideGeofence = true
+            do {
+                self?.currentWorkplaceLocation = try await self?.locationService.getLocationById(regionId)
+                self?.isInsideGeofence = true
+            } catch {
+                print("❌ Failed to get location by id: \(error)")
+            }
         }
     }
 
@@ -269,7 +273,7 @@ extension AttendanceViewModel: GeofenceDelegate {
         }
     }
 
-    nonisolated func didFailWithError(_ error: LocationError) {
+    nonisolated func geofenceDidFailWithError(_ error: LocationError) {
         Task { @MainActor [weak self] in
             self?.showError(message: error.errorDescription ?? "Geofence error")
         }

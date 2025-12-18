@@ -34,15 +34,18 @@ class IzinlerViewModel: ObservableObject {
 
     private let izinlerService: IzinlerService
     private let keychainManager: KeychainManager
+    private let userDefaultsManager: UserDefaultsManager
 
     // MARK: - Initialization
 
     init(
         izinlerService: IzinlerService = .shared,
-        keychainManager: KeychainManager = .shared
+        keychainManager: KeychainManager = .shared,
+        userDefaultsManager: UserDefaultsManager = .shared
     ) {
         self.izinlerService = izinlerService
         self.keychainManager = keychainManager
+        self.userDefaultsManager = userDefaultsManager
 
         // Load data
         Task {
@@ -59,10 +62,24 @@ class IzinlerViewModel: ObservableObject {
 
     /// Load dashboard data (includes chart, balances, and statistics)
     private func loadDashboardData() async {
-        // Get current user ID
-        guard let userId = keychainManager.getUserId() else {
+        // Get current user ID - try Keychain first, then UserDefaults
+        var userId = keychainManager.getUserId()
+
+        if userId == nil {
+            print("⚠️ [IzinlerViewModel] User ID not found in Keychain, trying UserDefaults...")
+
+            if let userInfo = userDefaultsManager.getUserInfo() {
+                userId = userInfo.userId
+
+                // Save to Keychain for next time
+                _ = keychainManager.saveUserId(userInfo.userId)
+                print("✅ [IzinlerViewModel] User ID retrieved from UserDefaults and saved to Keychain: \(userInfo.userId)")
+            }
+        }
+
+        guard let userId = userId else {
             error = "Kullanıcı bilgisi bulunamadı"
-            print("❌ [IzinlerViewModel] User ID not found in Keychain")
+            print("❌ [IzinlerViewModel] User ID not found in Keychain or UserDefaults")
             return
         }
 

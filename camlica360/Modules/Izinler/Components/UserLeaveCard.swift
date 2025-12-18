@@ -12,7 +12,11 @@ struct UserLeaveCard: View {
 
     private var progress: Double {
         guard totalDays > 0 else { return 0 }
-        return Double(usedDays) / Double(totalDays)
+        let calculated = Double(usedDays) / Double(totalDays)
+        // Guard against NaN and infinity
+        guard !calculated.isNaN && !calculated.isInfinite else { return 0 }
+        // Clamp between 0 and 1
+        return min(max(calculated, 0), 1)
     }
 
     var body: some View {
